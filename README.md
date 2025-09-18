@@ -1,100 +1,98 @@
 # NSBMD PNG Pipeline Tool - Mega Ultra Edition 😎
 
-## Übersicht
+## Overview
 
-Dieses Tool ermöglicht es, **NSBMD-Dateien** (z. B. `w1.nsbmd`) für **New Super Mario Bros. DS** zu bearbeiten, indem die Texturen als PNG exportiert, bearbeitet (z. B. mit **Tinke**) und anschließend wieder in die NSBMD importiert werden.  
-Das Tool enthält epische ASCII-Banner, Dummy-Layer, Slow-Prints, Farbanimationen, Random Events und Backups für maximalen Coolness-Faktor.
+This tool allows you to edit **NSBMD files** (e.g., `w1.nsbmd`) for **New Super Mario Bros. DS** by exporting the textures as PNGs, editing them (e.g., with **Tinke**), and then importing them back into the NSBMD file.
+The tool includes epic ASCII banners, dummy layers, slow-print effects, color animations, random events, and backups for maximum coolness factor.
 
 ---
 
 ## Features
 
-- Automatischer Export der NSBMD-Bitmaps in PNG-Dateien  
-- Vorbereitung der PNGs zur Bearbeitung in Tinke oder anderen Grafiktools  
-- Import bearbeiteter PNGs zurück in NSBMD  
-- Backups der Originaldateien  
-- Epische ASCII-Banner, Ladeanimationen und Farbausgabe  
-- Random Events und Easter Eggs für Spaß und epische Länge  
-- Vollständig automatisierte Ordnererstellung (`map`, `png`, `finished`)
+- Automatically exports NSBMD bitmaps to PNG files
+- Prepares the PNGs for editing in Tinke or other graphics tools
+- Imports edited PNGs back into the NSBMD file
+- Creates backups of the original files
+- Epic ASCII banners, loading animations, and color output
+- Random events and Easter eggs for fun and epic length
+- Fully automated folder creation (`map`, `png`, `finished`)
 
 ---
 
 ## Installation
 
-1. **Python 3.10 oder höher** installieren:  
-   [Python Download](https://www.python.org/downloads/)
+1. Install **Python 3.10 or higher**:
+[Python Download](https://www.python.org/downloads/)
 
-2. **Benötigte Bibliothek installieren**:  
-   Öffne CMD oder PowerShell und gib ein:
-   ```powershell
-   pip install pillow
-Code speichern:
-Speichere das Python-Script als nsbmd_pipeline_final.py.
+2. **Install the required library**:
+Open CMD or PowerShell and type:
+```powershell
+pip install pillow
+Save the script:
+Save the Python script as nsbmd_pipeline_final.py.
 
-Ordnerstruktur
-Das Tool legt Ordner automatisch an, du musst nur die Dateien einfügen:
+Folder Structure
+The tool automatically creates folders; you only need to place the files:
 
 scss
-Code kopieren
-map       ← Original NSBMD-Datei(en) hier rein
-png       ← Bearbeitete PNGs hier rein (nach Tinke)
-finished  ← Fertige NSBMD-Datei wird hier abgelegt
-Hinweis:
+Copy code
+map       ← Place the original NSBMD file(s) here
+png       ← Place the edited PNGs here (after Tinke)
+finished  ← The finished NSBMD file will be placed here
+Note:
 
-map muss mindestens die Original w1.nsbmd enthalten, sonst kann das Tool nichts exportieren.
+The "map" folder must contain at least the original w1.nsbmd file, otherwise the tool cannot export anything.
 
-png wird erst relevant, nachdem die PNGs in Tinke bearbeitet wurden.
-
-Nutzung
-Script ausführen:
+The "png" folder only becomes relevant after the PNGs have been edited in Tinke. Usage
+Run the script:
 
 powershell
-Code kopieren
-cd Pfad\zum\Script
+Copy code
+cd path\to\script
 python nsbmd_pipeline_final.py
-ASCII-Banner & Dummy-Layer werden angezeigt.
+An ASCII banner and dummy layers will be displayed.
 
-PNGs im Ordner png mit Tinke bearbeiten.
+Edit the PNGs in the "png" folder using Tinke.
 
-Wenn die PNGs fertig sind, Enter drücken.
+When the PNGs are finished, press Enter.
 
-Das Tool packt die PNGs automatisch zurück in die NSBMD.
+The tool will automatically repack the PNGs into the NSBMD.
 
-Fertige NSBMD-Datei befindet sich im Ordner finished, z. B.:
+The finished NSBMD file will be located in the "finished" folder, e.g.:
 
-Code kopieren
+Copy code
 finished\w1_mega_fixed_4.nsbmd
-Tipps für Tinke
-Stelle sicher, dass das PNG im richtigen TEX0/TEX1-Format gespeichert wird.
+Tips for Tinke
+Make sure the PNG is saved in the correct TEX0/TEX1 format.
 
-Originalauflösung & Pixelgröße nicht verändern, sonst kann NSMBe abstürzen.
+Do not change the original resolution or pixel size, otherwise NSMBe might crash.
 
-Nutze Tinke nur für die Bildbearbeitung, das Script übernimmt das Zurückpacken in NSBMD.
+Use Tinke only for image editing; the script handles repacking into NSBMD.
 
-Hinweise & Warnungen
-Das Tool verändert die NSBMD-Datei, daher vorher immer Backup erstellen.
+Notes & Warnings
+This tool modifies the NSBMD file, so always create a backup first.
 
-Wenn PNGs falsch formatiert sind, kann NSMBe abstürzen.
+If the PNGs are incorrectly formatted, NSMBe might crash.
 
-Dummy-Layer, ASCII-Banner, Slow-Prints, Farbausgaben und Random Events dienen nur zur epischen Länge und Coolness – sie beeinflussen den Import nicht.
+Dummy layers, ASCII banners, slow prints, colored outputs, and random events are purely for epic length and coolness – they don't affect the import.
 
-Support / Probleme
-Falls das Tool die PNGs nicht findet: Prüfe, dass die Dateien im richtigen Ordner png liegen.
+Support / Issues
+If the tool can't find the PNGs: Check that the files are in the correct "png" folder.
 
-Fehlermeldungen zu Python-Paketen: Stelle sicher, dass Pillow installiert ist.
+Error messages about Python packages: Make sure Pillow is installed.
 
-Bei Crashs: Prüfe die PNG-Größe, Auflösung und TEX0/TEX1-Format.
+If crashes occur: Check the PNG size, resolution, and TEX0/TEX1 format.
 
-Lizenz
-Dieses Tool ist kostenlos für den privaten Gebrauch.
-Keine Garantie auf Kompatibilität mit NSMBe, Tinke oder ROMs.
-Benutzung auf eigene Verantwortung.
+License
+This tool is free for personal use.
+No guarantee of compatibility with NSMBe, Tinke, or ROMs.
+Use at your own risk.
 
 Fun Facts 😎
-Mega ASCII-Banner beim Start
+Mega ASCII banner on startup
 
-Random Events & Easter Eggs
+Random events & Easter eggs
 
-Epische Ladeanimationen mit Dummy-Layern
+Epic loading animations with dummy layers
 
-Viel Spaß beim Modden deiner NSBMD-Dateien!
+Have fun modding your NSBMD files!
